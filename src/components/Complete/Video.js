@@ -1,9 +1,10 @@
 import React from 'react'
 import video from '../../assets/connect.mp4'
 import styled from 'styled-components'
+
 export const RegVideo = () => {
   return (
-    <RegVideoWrapper>
+    <RegVideoWrapper> 
       <video controls autoPlay muted loop>
         <source src={video} type="video/mp4" />
       </video>
@@ -35,6 +36,9 @@ const RegVideoWrapper = styled.div`
   height: 30vh;
   position: relative;
   margin-bottom: 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
   video {
     position: absolute;
     top: 0;
@@ -42,6 +46,7 @@ const RegVideoWrapper = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: var(--radius);
   }
 `
 const IframeVideoWrapper = styled.div`

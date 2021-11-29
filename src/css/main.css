@@ -403,7 +403,7 @@ Posts Component
   text-transform: uppercase;
   color: #e12d39;
   font-size: 1.25rem;
-  margin-bottom: 2.5rem;
+  margin: 2.5rem 0;
 }
 
 @media screen and (min-width: 992px) {
@@ -542,7 +542,6 @@ Single Pages
 Testing Post and Components
 ===============
 */
-
 .code {
   background: #1e1e1e;
   color: var(--clr-primary-5);
@@ -612,6 +611,7 @@ Testing Post and Components
 .first-inline-img {
   width: 20rem;
   border-radius: 1rem;
+  margin-right: 1rem;
 }
 
 /*
@@ -620,8 +620,8 @@ Footer
 ===============
 */
 .footer {
-  height: 7rem;
-  text-align: center;
+  /* height: 7rem; */
+  /* text-align: center; */
   background: var(--clr-black);
   display: grid;
   place-items: center;
@@ -648,4 +648,22 @@ Footer
   color: var(--clr-white);
   text-transform: uppercase;
   letter-spacing: var(--spacing);
+}
+.footer .categories {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.footer .category {
+  color: var(--clr-white);
+  /* margin-right: 2rem; */
+  text-transform: lowercase;
+}
+.footer div {
+  padding-top: 1rem;
+}
+.footer ul li {
+  margin-right: 1rem;
 }

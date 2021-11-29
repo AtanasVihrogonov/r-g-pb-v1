@@ -1,0 +1,76 @@
+---
+title: Gatsby Tutorial
+slug: gatsby-tutorial
+image: ./images/gatsby-1.png
+date: 2020-05-27
+author: john smith
+category: gatsby
+readTime: 34
+---
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../../components/Complete'
+
+
+## my first mdx file
+
+**We’ll include the license updates with React 16’s release next week.** We’ve been working on React 16 for over a year, and we’ve completely rewritten its internals in order to unlock powerful features that will benefit everyone building user interfaces at scale. We’ll share more soon about how we rewrote React, and we hope that our work will inspire developers everywhere, whether they use React or not.
+
+_We’re looking forward to putting this license discussion behind us and getting back to what we care about most: shipping great products._
+
+<div className='code'>
+
+```js
+const firstName = 'john'
+const lastName = 'smith'
+```
+
+</div>
+
+<div className='nice-text'>
+
+<h3>nice text</h3>
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+React 16’s release next week.\*\* We’ve been working on React 16 for over a year, and we’ve completely rewritten its internals in order to unlock powerful features that will benefit everyone building user interfaces at scale. We’ll share more soon about how we rewrote React.
+
+</div>
+
+<h2> React Components </h2>
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+![nice image](./images/gatsby-1.png)
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+
